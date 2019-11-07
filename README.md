@@ -15,6 +15,8 @@ Evaluar los conocimientos de PHP y Javascript aprendidos durante el curso. El al
 
 Generar un slider de testimoniales o frases con un administrador de contenido en donde el usuario podrá agregar o eliminar testimonios.
 
+[Ve el demo aquí](http://macarenapoo.com/testimoniales/index.php)
+
 ![Slider Demo](images/Slider.gif "Demo")
 
 ### Evaluación
