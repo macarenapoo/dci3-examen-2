@@ -6,7 +6,8 @@
 
 <script>
   var testimoniales = new Array();
-  <?php
-    // agrega aqui tu código
-  ?>
 </script>
+
+<?php
+  // agrega aqui tu código
+?>
