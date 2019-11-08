@@ -42,6 +42,8 @@ function slidePrevio() {
 }
 
 function irASlide(slide) {
+  slideActual = slide;
+  ajustarSlider();
 }
 
 function ajustarSlider() {
