@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<div class="slider">
+<div class="slider" id="slider">
   <div id="testimoniales" class="testimoniales"></div>
   <div class="flechas">
     <div class="area area-left" onClick="slidePrevio()" id="flechaIzquierda">
@@ -19,3 +19,4 @@
 <script src="js/slider.js"></script>
 
 <?php include 'footer.php'; ?>
+  
