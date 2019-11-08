@@ -16,8 +16,9 @@
         ejecutar($sql);
 
         echo "<script language='javascript'>window.location.assign('admin.php');</script>";
-    }
+    } 
   ?>
     
   </body>
 </html> 
+

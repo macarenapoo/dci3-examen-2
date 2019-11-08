@@ -15,5 +15,6 @@
       echo "<script language= 'javascript'>";
       echo "testimoniales.push({testimonio: '".$datos["testimonio"]."', autor: '".$datos["autor"]."', puesto: '".$datos["puesto"]."',  id: '".$datos["idTestimonio"]."'});";
       echo "</script>";
-  }
+  } 
 ?>
+ 
