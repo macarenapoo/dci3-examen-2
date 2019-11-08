@@ -1,5 +1,6 @@
 var contenedor = document.getElementById("testimoniales");
 var nav = document.getElementById("nav");
+var slideWidth = document.getElementById("slider").offsetWidth;
 var slideActual = 0;
 
 function init() {
@@ -19,7 +20,7 @@ function renderearTestimonial(testimonial) {
   contenedor.insertAdjacentHTML('beforeend',
     `
     <div class="contenedor">
-      <blockquote class="testimonial">
+      <blockquote class="testimonial"> 
         `+ testimonial.testimonio + `
         <footer class="testimonial-footer">
             — <cite class="author">`+ testimonial.autor + `</cite>, <cite class="company">` + testimonial.puesto + `</cite>
@@ -31,15 +32,19 @@ function renderearTestimonial(testimonial) {
 }
 
 function slideSiguiente() {
-
+  slideActual++;
+  ajustarSlider();
 }
 
 function slidePrevio() {
-
+  slideActual--;
+  ajustarSlider();
 }
 
 function irASlide(slide) {
-
+  wrapper.style.marginLeft = - (slideWidth * cslideActual) + "px";
+  ajustarFlechas();
+  ajustarNav();
 }
 
 function ajustarSlider() {
@@ -50,6 +55,18 @@ function ajustarSlider() {
 }
 
 function ajustarFlechas() {
+  var leftArrow = document.getElementById("leftArrow");
+  var rightArrow = document.getElementById("rightArrow");
+  if (slideActual === 0) {
+    leftArrow.style.visibility = "hidden";
+  } else {
+    leftArrow.style.visibility = "visible";
+  }
+  if (slideActual === slides.length - 1) {
+    rightArrow.style.visibility = "hidden";
+  } else {
+    rightArrow.style.visibility = "visible";
+  }
 
 }
 
