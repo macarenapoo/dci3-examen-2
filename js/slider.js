@@ -60,7 +60,7 @@ function ajustarFlechas() {
   } else {
     left.style.visibility = "visible";
   }
-  if (slideActual === slides.length - 1) {
+  if (slideActual === testimoniales.length - 1) {
     right.style.visibility = "hidden";
   } else {
     right.style.visibility = "visible";
