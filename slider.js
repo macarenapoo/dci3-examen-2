@@ -53,18 +53,18 @@ function ajustarSlider() {
 }
 
 function ajustarFlechas() {
-  var left = document.getElementById("flechaIzquierda");
-  var right = document.getElementById("flechaDerecha");
+  var flechaIzquierda = document.getElementById("flechaIzquierda");
+  var flechaDerecha = document.getElementById("flechaDerecha");
   if (slideActual === 0) {
-    left.style.visibility = "hidden";
+    flechaIzquierda.style.visibility = "hidden";
   } else {
-    left.style.visibility = "visible";
+    flechaIzquierda.style.visibility = "visible";
   }
 
   if (slideActual === testimoniales.length - 1) {
-    right.style.visibility = "hidden";
+    flechaDerecha.style.visibility = "hidden";
   } else {
-    right.style.visibility = "visible";
+    flechaDerecha.style.visibility = "visible";
   }
 }
 
