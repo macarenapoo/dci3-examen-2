@@ -20,9 +20,9 @@ function renderearTestimonial(testimonial) {
     `
     <div class="contenedor">
       <blockquote class="testimonial">
-        `+ testimonial.testimonio + `
+        ` + testimonial.testimonio + `
         <footer class="testimonial-footer">
-            — <cite class="author">`+ testimonial.autor + `</cite>, <cite class="company">` + testimonial.puesto + `</cite>
+            — <cite class="author">` + testimonial.autor + `</cite>, <cite class="company">` + testimonial.empresa + `</cite>
         </footer>
       </blockquote>
     </div>
@@ -30,16 +30,21 @@ function renderearTestimonial(testimonial) {
   );
 }
 
-function slideSiguiente() {
 
+
+function slideSiguiente() {
+  slideActual++;
+  ajustarSlider();
 }
 
 function slidePrevio() {
-
+  slideActual--;
+  ajustarSlider();
 }
 
 function irASlide(slide) {
-
+  slideActual = slide;
+  ajustarSlider();
 }
 
 function ajustarSlider() {
@@ -50,6 +55,19 @@ function ajustarSlider() {
 }
 
 function ajustarFlechas() {
+  var leftArrow = document.getElementById("flechaIzquierda");
+  var rightArrow = document.getElementById("flechaDerecha");
+  if (slideActual === 0) {
+    leftArrow.style.visibility = "hidden";
+  } else {
+    leftArrow.style.visibility = "visible";
+  }
+
+  if (slideActual === testimoniales.length - 1) {
+    rightArrow.style.visibility = "hidden";
+  } else {
+    rightArrow.style.visibility = "visible";
+  }
 
 }
 
