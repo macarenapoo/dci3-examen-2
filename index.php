@@ -14,8 +14,16 @@
   <a href="admin.php" class="admin-icon"><i class="fas fa-cog"></i></a>
 </div>
 
-<?php include 'testimoniales.php'; ?>
+<?php
+
+include 'testimoniales.php';
+
+?>
 
 <script src="js/slider.js"></script>
 
-<?php include 'footer.php'; ?>
+<?php
+
+include 'footer.php';
+
+?>

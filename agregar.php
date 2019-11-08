@@ -7,7 +7,19 @@
 
 <body>
   <?php
-    // Agrega el código aqui
+  include "../conexion.php";
+
+  if (isset($_POST["testimonio"])){
+    $testimonio = $_POST["testimonio"];
+    $rol = $_POST["autor"];
+    $autor = $_POST["puesto"];
+
+    $sql = "INSERT INTO karla_testimoniales2 (testimonio, autor, puesto) VALUES ('$testimonio', '$autor', '$puesto' )";
+
+    ejecutar($sql);
+
+    echo "<script language='javascript'>window.location.assign('admin.php');</script>";
+}
   ?>
     
   </body>

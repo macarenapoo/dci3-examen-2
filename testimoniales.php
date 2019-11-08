@@ -9,5 +9,11 @@
 </script>
 
 <?php
-  // agrega aqui tu código
+
+while ($datos = mysql_fetch_array($rs)){
+
+  echo "<script language='javascript'>";
+  echo "<testimoniales.php({ testimonio: '".$datos["testimonio"]."', autor: '".$datos["autor"]."', puesto: '".$datos["puesto"]."' })";
+  echo "</script>";
+}
 ?>
