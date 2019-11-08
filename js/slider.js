@@ -31,15 +31,18 @@ function renderearTestimonial(testimonial) {
 }
 
 function slideSiguiente() {
-
+  slideActual++;
+  ajustarSlider();
 }
 
 function slidePrevio() {
-
+  slideActual--;
+  ajustarSlider();
 }
 
 function irASlide(slide) {
-
+  slideActual = slide;
+  ajustarSlider();
 }
 
 function ajustarSlider() {
@@ -50,7 +53,18 @@ function ajustarSlider() {
 }
 
 function ajustarFlechas() {
-
+  var left = document.getElementById("flechaIzquierda");
+  var right = document.getElementById("flechaDerecha");
+  if (slideActual === 0) {
+    left.style.visibility = "hidden";
+  } else {
+    left.style.visibility = "visible";
+  }
+  if (slideActual === testimoniales.length - 1) {
+    right.style.visibility = "hidden";
+  } else {
+    right.style.visibility = "visible";
+  }
 }
 
 function agregarNavItem(item, index) {
