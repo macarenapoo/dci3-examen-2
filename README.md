@@ -21,9 +21,9 @@ Generar un slider de testimoniales o frases con un administrador de contenido en
 
 ### Evaluación
 
-1. Crea una tabla en la base de datos que lleve tu nombre, ej: `macarena_testimoniales`
-2. Crea los campos necesarios para poder guardar los testimoniales, cada testimonial lleva un párrafo, el autor y el rol o puesto del autor.
-3. Agrega el código necesario al archivo `agregar.php` para que al enviar el formulario que se encuentra en `admin.php` se agregue la información en la tabla que creamos en el paso 1. Verifica que la información haya sido agregada correctamente en la interfáz de PHPMyAdmin.
+1. Crea una tabla en la base de datos que lleve tu nombre, ej: `macarena_testimoniales`//
+2. Crea los campos necesarios para poder guardar los testimoniales, cada testimonial lleva un párrafo, el autor y el rol o puesto del autor.//
+3. Agrega el código necesario al archivo `agregar.php` para que al enviar el formulario que se encuentra en `admin.php` se agregue la información en la tabla que creamos en el paso 1. Verifica que la información haya sido agregada correctamente en la interfáz de PHPMyAdmin.//
 4. Después de agregar el record a la tabla, redirecciona al usuario a `admin.php`
 5. En el archivo `testimoniales.php` obten todos los records que existen en la tabla que creaste en el paso 1, y guárdalos en el arreglo `testimoniales` como un objeto con la siguiente forma: `{ id: 0, testimonio: '', autor: '', puesto: '' }`. 
 Al finalizar este paso deberás ver el primer testimonial en `index.php` y todos los testimoniales listados en `admin.php`. Puedes navegar entre estas dos páginas con el ícono que se encuentra en la parte superior derecha de la pantalla.
