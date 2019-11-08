@@ -3,10 +3,10 @@
 <div class="slider">
   <div id="testimoniales" class="testimoniales"></div>
   <div class="flechas">
-    <div class="area area-left" onClick="slidePrevio()" id="flechaIzquierda">
+    <div class="area area-left" onClick="slidePrevio()" id="flecha1">
       <i class="fas fa-angle-left"></i>
     </div>
-    <div class="area area-right" onCLick="slideSiguiente()" id="flechaDerecha">
+    <div class="area area-right" onCLick="slideSiguiente()" id="flecha2">
       <i class="fas fa-angle-right"></i>
     </div>
   </div>

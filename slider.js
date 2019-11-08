@@ -54,15 +54,15 @@ function ajustarSlider() {
 }
 
 function ajustarFlechas() {
-  var leftArrow = document.getElementById("flechaIzquierda");
-  var rightArrow = document.getElementById("flechaDerecha");
+  var leftArrow = document.getElementById("flecha1");
+  var rightArrow = document.getElementById("flecha2");
   if (slideActual === 0) {
     leftArrow.style.visibility = "hidden";
   } else {
     leftArrow.style.visibility = "visible";
   }
 
-  if (slideActual === slides.length - 1) {
+  if (slideActual === testimoniales.length - 1) {
     rightArrow.style.visibility = "hidden";
   } else {
     rightArrow.style.visibility = "visible";
@@ -71,7 +71,7 @@ function ajustarFlechas() {
 }
 
 function agregarNavItem(item, index) {
-  nav.insertAdjacentHTML('beforeend', '<div class="nav-item" onClick="irASlide(' + index + ')" />');
+  nav.insertAdjacentHTML('beforeend`, '<div class="nav-item" onClick="irASlide(' + index + ')" />');
 }
 
 function ajustarNav() {
