@@ -12,8 +12,17 @@
   <div class="testimonial-grid" id="grid"></div>
 </div>
 
-<?php include 'testimoniales.php'; ?>
+<?php
+include "../conexion.php";
+include 'testimoniales.php';
+?>
 
 <script src="js/admin.js"></script>
 
 <?php include 'footer.php'; ?>
+
+<?php
+
+include 'agregar.php';
+
+?>
