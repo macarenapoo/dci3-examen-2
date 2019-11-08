@@ -1,7 +1,7 @@
 <?php
-  include "../conexion.php";
-  $sql = "select * from testimoniales";
-  $rs = ejecutar($sql);
+    include "../conexion.php";
+    $sql = "SELECT * FROM salma_testimoniales";
+    $rs = ejecutar($sql);
 ?>
 
 <script>
@@ -9,5 +9,9 @@
 </script>
 
 <?php
-  // agrega aqui tu código
+  while ($datos = mysqli_fetch_array($rs)) {
+    echo "<script language='javascript'>";
+    echo "testimoniales.push({ testimonio: '".$datos["testimonio"]."', autor: '".$datos["autor"]."', puesto: '".$datos["puesto"]."', id: '".$datos["idTestimoniales"]."'  });";
+    echo "</script>";
+  }
 ?>
